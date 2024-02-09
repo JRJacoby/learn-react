@@ -1,55 +1,39 @@
+function OneProfile({ profession, awards, discovered, image }) {
+  return (
+    <section className="profile">
+      <h2>{profession}</h2>
+      <img
+        className="avatar"
+        src={image}
+        alt={profession}
+        width={70}
+        height={70}
+      />
+      <ul>
+        <li>
+          <b>Profession: </b>
+          {profession}
+        </li>
+        <li>
+          <b>Awards: {awards.length} </b>
+          ({awards.join(', ')})
+        </li>
+        <li>
+          <b>Discovered: </b>
+          {discovered}
+        </li>
+      </ul>
+    </section>
+  )
+}
+
 export default function Gallery() {
   return (
     <div>
       <h1>Notable Scientists</h1>
-      <section className="profile">
-        <h2>Maria Skłodowska-Curie</h2>
-        <img
-          className="avatar"
-          src='https://i.imgur.com/szV5sdGs.jpg'
-          alt="Maria Skłodowska-Curie"
-          width={70}
-          height={70}
-        />
-        <ul>
-          <li>
-            <b>Profession: </b>
-            physicist and chemist
-          </li>
-          <li>
-            <b>Awards: 4 </b>
-            (Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal)
-          </li>
-          <li>
-            <b>Discovered: </b>
-            polonium (element)
-          </li>
-        </ul>
-      </section>
-      <section className="profile">
-        <h2>Katsuko Saruhashi</h2>
-        <img
-          className="avatar"
-          src='https://i.imgur.com/YfeOqp2s.jpg'
-          alt="Katsuko Saruhashi"
-          width={70}
-          height={70}
-        />
-        <ul>
-          <li>
-            <b>Profession: </b>
-            geochemist
-          </li>
-          <li>
-            <b>Awards: 2 </b>
-            (Miyake Prize for geochemistry, Tanaka Prize)
-          </li>
-          <li>
-            <b>Discovered: </b>
-            a method for measuring carbon dioxide in seawater
-          </li>
-        </ul>
-      </section>
+      <OneProfile profession="profession1" awards={["awards1", "awards2"]} discovered="discovered1" image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/330px-Marie_Curie_c._1920s.jpg"></OneProfile>
+      <OneProfile profession="profession2" awards={["awards3", "awards4"]} discovered="discovered2" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/330px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg"></OneProfile>
+
     </div>
   );
 }
