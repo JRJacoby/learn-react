@@ -15,9 +15,11 @@ export const people = [{
 function getImageUrl(imageId) {
     return "https://i.imgur.com/" + imageId + "s.jpg"
 }
+
 export default function List() {
-  const listItems = people.map(person =>
-    <li>
+  const listItems = people.map((person, index) =>
+    <li key={person.imageId}>
+      <img src={getImageUrl(person.imageId)} />
     </li>
   );
   return <ul>{listItems}</ul>;

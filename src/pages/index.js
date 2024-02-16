@@ -7,11 +7,12 @@ import Profile from './components/profile_props.js'
 import MyComp from './qcomps/firstcomp.js'
 import Bio from './qcomps/bios.js'
 import TodoList from './qcomps/todos.js'
+import List from './qcomps/list_keys_id.js'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Gallery />
+        <List />
     </div>
   )
 }
