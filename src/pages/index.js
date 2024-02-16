@@ -8,11 +8,12 @@ import MyComp from './qcomps/firstcomp.js'
 import Bio from './qcomps/bios.js'
 import TodoList from './qcomps/todos.js'
 import List from './qcomps/list_keys_id.js'
+import RecipeList from './qcomps/recipes.js'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <List />
+        <RecipeList />
     </div>
   )
 }
