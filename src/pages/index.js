@@ -10,11 +10,12 @@ import TodoList from './qcomps/todos.js'
 import List from './qcomps/list_keys_id.js'
 import RecipeList from './qcomps/recipes.js'
 import Form from './qcomps/stuckForm.js'
+import FeedbackForm from './qcomps/thankYouCrash.js'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Form />
+        <FeedbackForm />
     </div>
   )
 }
