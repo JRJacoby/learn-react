@@ -13,11 +13,12 @@ import Form from './components/updObjects.js'
 import FeedbackForm from './qcomps/thankYouCrash.js'
 import RequestTracker from './qcomps/shoppingCart.js'
 import Scoreboard from './qcomps/updObjectsForm.js'
+import BucketList from './qcomps/arrObj.js'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <List />
+        <BucketList />
     </div>
   )
 }
