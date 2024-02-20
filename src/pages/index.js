@@ -9,14 +9,15 @@ import Bio from './qcomps/bios.js'
 import TodoList from './qcomps/todos.js'
 import List from './qcomps/list_keys_id.js'
 import RecipeList from './qcomps/recipes.js'
-import Form from './qcomps/stuckForm.js'
+import Form from './components/updObjects.js'
 import FeedbackForm from './qcomps/thankYouCrash.js'
 import RequestTracker from './qcomps/shoppingCart.js'
+import Scoreboard from './qcomps/updObjectsForm.js'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <RequestTracker />
+        <Scoreboard />
     </div>
   )
 }
