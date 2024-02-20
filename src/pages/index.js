@@ -11,11 +11,12 @@ import List from './qcomps/list_keys_id.js'
 import RecipeList from './qcomps/recipes.js'
 import Form from './qcomps/stuckForm.js'
 import FeedbackForm from './qcomps/thankYouCrash.js'
+import RequestTracker from './qcomps/shoppingCart.js'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <FeedbackForm />
+        <RequestTracker />
     </div>
   )
 }
